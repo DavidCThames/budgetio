@@ -43,6 +43,8 @@ def search(request):
         for key in budget:
             budget[key] = budget[key] / 12    
 
+        neighborhoods = display_neighborhoods(budget['housing'])
+        
         return render(request, 'budget_calc/results.html',  {'budget': budget, 'neighborhoods': neighborhoods})
 
     return render(request, 'budget_calc/search.html')
@@ -65,10 +67,10 @@ def shift_for_pref(data_avg, data_pref):
     return data_sum
 
 def display_neighborhoods(housing_expense):
-    minExpense = housing_expense - 600
-    maxExpense = housing_expense + 600
-    neighborhoods_filtered = Neighborhoods.objects.filter(cost_range=[minExpense, maxExpense])
+    minExpense = housing_expense - 50
+    maxExpense = housing_expense + 50
+    neighborhoods_filtered = Neighborhoods.objects.filter(cost__range=[minExpense, maxExpense]).order_by('name')
         
 
 
-    return neighborhoods
+    return neighborhoods_filtered

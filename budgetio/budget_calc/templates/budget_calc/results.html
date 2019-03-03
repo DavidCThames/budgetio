@@ -14,6 +14,68 @@
         <div id="donutchart" style="width: 900px; height: 500px;"></div>
       </div>
     </div>
+
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title">Suggested Neighborhoods</span>
+            <div class="row" id="neighborhoods">
+                {% for neighborhood in neighborhoods %}      
+                    <div class="col s6"><div class="card">
+                        <div class="card-image" style="background-color: #6200EE; min-height: 100px;">
+                            <img src="{{neighborhood.photo_url}}">
+                            <span class="card-title">{{neighborhood.name}}</span>
+                        </div> 
+                        <div class="card-content"> 
+                            <p> {{neighborhood.description}} </p>
+                            <p><b>Mean Rent:</b> {{neighborhood.cost}}$/month</p>
+                            <p><b>Restaurants:</b></p>
+                            <div class="row restaurants">
+
+                                <div class="col s6"><div class="card">
+                                    <div class="card-content">
+                                        <span class="card-title">{{neighborhood.r1_name}}</span>
+                                        <p>Rating: {{neighborhood.r1_user_rating}}</p>
+                                        <p>Cuisines: {{neighborhood.r1_cuisines}}</p>
+                                        <h6><a href="{{neighborhood.r1_photos_url}}">More info</a></h6>
+                                    </div>
+                                </div></div>
+
+                                <div class="col s6"><div class="card">
+                                    <div class="card-content">
+                                        <span class="card-title">{{neighborhood.r2_name}}</span>
+                                        <p>Rating: {{neighborhood.r2_user_rating}}</p>
+                                        <p>Cuisines: {{neighborhood.r2_cuisines}}</p>
+                                        <h6><a href="{{neighborhood.r2_photos_url}}">More info</a></h6>
+                                    </div>
+                                </div></div>
+
+                                <div class="col s6"><div class="card">
+                                    <div class="card-content">
+                                        <span class="card-title">{{neighborhood.r3_name}}</span>
+                                        <p>Rating: {{neighborhood.r3_user_rating}}</p>
+                                        <p>Cuisines: {{neighborhood.r3_cuisines}}</p>
+                                        <h6><a href="{{neighborhood.r3_photos_url}}">More info</a></h6>
+                                    </div>
+                                </div></div>
+
+                                <div class="col s6"><div class="card">
+                                    <div class="card-content">
+                                        <span class="card-title">{{neighborhood.r4_name}}</span>
+                                        <p>Rating: {{neighborhood.r4_user_rating}}</p>
+                                        <p>Cuisines: {{neighborhood.r4_cuisines}}</p>
+                                        <h6><a href="{{neighborhood.r4_photos_url}}">More info</a></h6>
+                                    </div>
+                                </div></div>
+
+                            </div>
+                        </div>
+                    </div></div>
+                {% endfor %}
+            </div> 
+        </div>
+    </div>
+
+
   </div>
   <div class="col s2"></div>
   <div id="dossierContainer1"></div>

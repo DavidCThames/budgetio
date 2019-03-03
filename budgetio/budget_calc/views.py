@@ -8,7 +8,7 @@ def search(request):
     if request.method=='GET' and request.GET.get('search-housing') is not None:
         data = request.GET
 
-        new_data = Expences.objects.get(salary=data['search-new-salary'])
+        new_data = Expences.objects.get(salary=(int(int(data['search-new-salary']) / 10) * 10))
         pref_data = {
             "food":             int(data['search-food']),
             "housing":          int(data['search-housing']),
@@ -52,7 +52,7 @@ def shift_for_pref(data_avg, data_pref):
     # Get the total salary of each dataset
     data_avg_total = sum(data_avg.values(), 0.0)
     data_pref_total = sum(data_pref.values(), 0.0)
-    
+
     # Convert data_pref to the same total as data_avg
     for key in data_pref:
         data_pref[key] = int(data_pref[key] * data_avg_total / data_pref_total)

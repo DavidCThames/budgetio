@@ -3,27 +3,85 @@
 
 
 {% block content %}
-    <div class="row">
-        <div class="col s2"></div>
+<div class="row">
+  <div class="col s2"></div>
 
-        <div class="col s8">
+  <div class="col s8">
 
-            <div class="card">
-                <div class="card-content">
-                    <span class="card-title">Suggested New Budget</span>
-                    <div id="donutchart" style="width: 900px; height: 500px;"></div>           
-                </div>
-            </div>
-        </div> 
-        <div class="col s2"></div>
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Suggested New Budget</span>
+        <div id="donutchart" style="width: 900px; height: 500px;"></div>
+      </div>
     </div>
+  </div>
+  <div class="col s2"></div>
+  <div id="dossierContainer1"></div>
+</div>
 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  var baseRestURL = "https://env-132697.customer.cloud.microstrategy.com/MicroStrategyLibrary";
+  var username = "hackathon";
+  var password = "mstr-uva2019";
+  var projectID = "62F671F011E93D21A5630080EFB5E92F";
+  var dossierID = "6222CB3B11E93D75931B0080EF959AA5";
+
+  var postData = {};
+  postData.username = username;
+  postData.password = password;
+  postData.loginMode = 1;
+
+
+  var projectUrl = baseRestURL + '/app/' + projectID;
+  var dossierUrl = projectUrl + '/' + dossierID;
+  console.log("DossierURL: " + dossierUrl);
+
+  //populate div with Dossier:
+  microstrategy.dossier.create({
+    placeholder: document.getElementById("dossierContainer1"),
+    url: dossierUrl,
+    enableCustomAuthentication: true,
+    customAuthenticationType: microstrategy.dossier.CustomAuthenticationType.AUTH_TOKEN,
+    getLoginToken: function () {
+      return getXHRRequestPromise(baseRestURL + '/api/auth/login', postData, 'POST', 'application/json', 'x-mstr-authToken').then(function (authToken) {
+        return authToken;
+      })
+    }
+  }).then(function (dossier) {
+    console.log(dossier);
+    //any code you want to run after dossier loads
+
+  });
+
+
+
+  function getXHRRequestPromise(url, body, method, contentType, desiredHeader) {
+    return new Promise(function (resolve, reject) {
+      var xhr = new XMLHttpRequest();
+      xhr.open(method, url);
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.setRequestHeader("Accept", "application/json");
+      xhr.send(JSON.stringify(body));
+
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 2) {
+          resolve(xhr.getResponseHeader(desiredHeader));
+        } else {
+          reject({
+            status: this.status,
+            statusText: xhr.statusText
+          });
+        }
+      };
+    });
+  };
+</script>
+<script type="text/javascript">
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+         var data = google.visualization.arrayToDataTable([
             ['Category', 'Money'],
             ['food', {{ budget.food }}],
             ['housing', {{ budget.housing }}],
@@ -34,13 +92,13 @@
         ]);
 
         var options = {
-          title: 'Budget (in USD)',
-          pieHole: 0.4,
-          pieSliceText: 'value'
+            title: 'Budget (in USD)',
+            pieHole: 0.4,
+            pieSliceText: 'value'
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
         chart.draw(data, options);
-      }
-    </script>
+    }
+</script>
 {% endblock %}

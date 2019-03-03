@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Expenceses(models.Model):
+class Expences(models.Model):
     salary = models.IntegerField()
     food = models.IntegerField()
     housing = models.IntegerField()
@@ -25,8 +25,3 @@ class Restaurants(models.Model):
     user_rating = models.DecimalField(max_digits=1, decimal_places=1)
     cuisines = models.CharField(max_length=150)
     has_online_delivery = models.IntegerField()
-
-
-
-
-

@@ -78,26 +78,27 @@
   };
 </script>
 <script type="text/javascript">
-  google.charts.load("current", { packages: ["corechart"] });
-  google.charts.setOnLoadCallback(drawChart);
-  function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-      ['Category', 'Money'],
-      ['Housing', {{ budget.housing }}],
-  ['Utilities', {{ budget.utilities }}],
-    ['Food', {{ budget.food }}],
-    ['Other', {{ budget.other }}],
-    ['Savings', {{ budget.savings }}]
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+         var data = google.visualization.arrayToDataTable([
+            ['Category', 'Money'],
+            ['food', {{ budget.food }}],
+            ['housing', {{ budget.housing }}],
+            ['transportation', {{ budget.transportation }}],
+            ['healthcare', {{ budget.healthcare }}],
+            ['taxes', {{ budget.taxes }}],
+            ['other', {{ budget.other }}]
         ]);
 
-  var options = {
-    title: 'Budget (in USD)',
-    pieHole: 0.4,
-    pieSliceText: 'value'
-  };
+        var options = {
+            title: 'Budget (in USD)',
+            pieHole: 0.4,
+            pieSliceText: 'value'
+        };
 
-  var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-  chart.draw(data, options);
-      }
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+    }
 </script>
 {% endblock %}

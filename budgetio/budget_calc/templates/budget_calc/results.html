@@ -24,12 +24,13 @@
       google.charts.setOnLoadCallback(drawChart);
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Category', 'Money'],
-          ['Housing',  {{ budget.housing }}],
-          ['Utilities', {{ budget.utilities }}],
-          ['Food', {{ budget.food }}],
-          ['Other', {{ budget.other }}],
-          ['Savings', {{ budget.savings }}]
+            ['Category', 'Money'],
+            ['food', {{ budget.food }}],
+            ['housing', {{ budget.housing }}],
+            ['transportation', {{ budget.transportation }}],
+            ['healthcare', {{ budget.healthcare }}],
+            ['taxes', {{ budget.taxes }}],
+            ['other', {{ budget.other }}]
         ]);
 
         var options = {

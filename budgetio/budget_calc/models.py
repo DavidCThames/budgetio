@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Expenceses(models.Model):
+class Expences(models.Model):
     salary = models.IntegerField()
     food = models.IntegerField()
     housing = models.IntegerField()
@@ -9,5 +9,3 @@ class Expenceses(models.Model):
     healthcare = models.IntegerField()
     taxes = models.IntegerField()
     other = models.IntegerField()
-
-

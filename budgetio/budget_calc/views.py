@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from .models import Expences
+from .models import Expences, Restaurants, Neighborhoods
 from collections import Counter
 
 # Create your views here.
@@ -43,7 +43,7 @@ def search(request):
         for key in budget:
             budget[key] = budget[key] / 12    
 
-        return render(request, 'budget_calc/results.html',  {'budget': budget})
+        return render(request, 'budget_calc/results.html',  {'budget': budget, 'neighborhoods': neighborhoods})
 
     return render(request, 'budget_calc/search.html')
 
@@ -63,3 +63,12 @@ def shift_for_pref(data_avg, data_pref):
         data_sum[key] = int(data_sum[key] / 2)
 
     return data_sum
+
+def display_neighborhoods(housing_expense):
+    minExpense = housing_expense - 600
+    maxExpense = housing_expense + 600
+    neighborhoods_filtered = Neighborhoods.objects.filter(cost_range=[minExpense, maxExpense])
+        
+
+
+    return neighborhoods

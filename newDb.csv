@@ -1,69 +1,69 @@
-latitude,Longitude ,City,State,Metro,CountyName,SizeRank,2019-01
-47.6805,122.12094,Redmond,WA,Seattle-Tacoma-Bellevue,King County,64,1931
-47.84472,-122.19849,Bothell,WA,Seattle-Tacoma-Bellevue,Snohomish County,115,1557
-47.67029,-122.34831,Seattle,WA,Seattle-Tacoma-Bellevue,King County,135,1700
-47.68361,-122.27802,Seattle,WA,Seattle-Tacoma-Bellevue,King County,209,1747
-47.73957,-122.34495,Shoreline,WA,Seattle-Tacoma-Bellevue,King County,242,1425
-47.6087583,-122.2964235,Seattle,WA,Seattle-Tacoma-Bellevue,King County,248,2040
-47.8962246,-122.1853637,Seattle Hill-Silver Firs,WA,Seattle-Tacoma-Bellevue,Snohomish County,289,1238
-47.7148126,-122.2031264,Kirkland,WA,Seattle-Tacoma-Bellevue,King County,311,1507
-48.7562157,-122.4894588,Bellingham,WA,Bellingham,Whatcom County,336,995
-47.6288591,-122.3456919,Seattle,WA,Seattle-Tacoma-Bellevue,King County,339,2500
-45.6405414,-122.6204002,Vancouver,WA,Portland-Vancouver-Hillsboro,Clark County,392,1095
-47.7170204,-122.3009337,Seattle,WA,Seattle-Tacoma-Bellevue,King County,408,1450
-47.6264794,-122.2051488,Bellevue,WA,Seattle-Tacoma-Bellevue,King County,485,2289
-47.6614244,-122.2683743,Seattle,WA,Seattle-Tacoma-Bellevue,King County,498,1547.5
-47.5412021,-122.2675626,Seattle,WA,Seattle-Tacoma-Bellevue,King County,504,1767
-47.9088246,-122.268112,Paine Field-Lake Stickney,WA,Seattle-Tacoma-Bellevue,Snohomish County,520,1225
-47.6338217,-122.3215448,Seattle,WA,Seattle-Tacoma-Bellevue,King County,620,1795
-47.85839,-122.2709006,Lynnwood,WA,Seattle-Tacoma-Bellevue,Snohomish County,741,1463.5
-47.6683603,-122.3769582,Seattle,WA,Seattle-Tacoma-Bellevue,King County,749,1944
-47.5105794,-122.1909906,Renton,WA,Seattle-Tacoma-Bellevue,King County,759,1560
-47.6913332,-122.382432,Seattle,WA,Seattle-Tacoma-Bellevue,King County,779,1395
-47.4116866,-122.245159,Kent,WA,Seattle-Tacoma-Bellevue,King County,789,1325
-47.6152474,-122.3497446,Seattle,WA,Seattle-Tacoma-Bellevue,King County,838,2514
-47.5745802,-122.4047843,Seattle,WA,Seattle-Tacoma-Bellevue,King County,849,1785
-47.9990269,-122.1914014,Everett,WA,Seattle-Tacoma-Bellevue,Snohomish County,884,1272.5
-47.1616994,-122.5019796,Lakewood,WA,Seattle-Tacoma-Bellevue,Pierce County,922,1129
-47.4925009,-121.9516339,Issaquah,WA,Seattle-Tacoma-Bellevue,King County,937,1823
-47.6384586,-122.3674079,Seattle,WA,Seattle-Tacoma-Bellevue,King County,942,1922
-47.6105427,-122.142426,Bellevue,WA,Seattle-Tacoma-Bellevue,King County,1013,1727
-47.759038,-122.202107,Bothell,WA,Seattle-Tacoma-Bellevue,Snohomish County,1082,1578.5
-47.6084921,-122.336407,Seattle,WA,Seattle-Tacoma-Bellevue,King County,1089,2399.5
-47.2457073,-122.4773432,Tacoma,WA,Seattle-Tacoma-Bellevue,Pierce County,1101,1195
-47.6329523,-122.2891887,Seattle,WA,Seattle-Tacoma-Bellevue,King County,1102,1695
-47.8419525,-122.2881807,Lynnwood,WA,Seattle-Tacoma-Bellevue,Snohomish County,1105,1345
-47.5824227,-122.2331227,Mercer Island,WA,Seattle-Tacoma-Bellevue,King County,1108,1823
-47.5762049,-122.3736284,Seattle,WA,Seattle-Tacoma-Bellevue,King County,1142,1515
-47.65805,-122.7120272,Silverdale,WA,Bremerton-Silverdale,Kitsap County,1154,1495
-47.4623372,-122.2055058,Renton,WA,Seattle-Tacoma-Bellevue,King County,1190,1350
-47.6015566,-122.3323351,Seattle,WA,Seattle-Tacoma-Bellevue,King County,1253,2100
-47.6150436,-122.1717577,Bellevue,WA,Seattle-Tacoma-Bellevue,King County,1271,1673
-47.668328,-122.387233,Ballard,WA,Seattle-Tacoma-Bellevue,King County,429,1980
-47.614592,-122.348464,Belltown,WA,Seattle-Tacoma-Bellevue,King County,412,2197.5
-47.538786,-122.275961,Brighton,WA,Seattle-Tacoma-Bellevue,King County,468,1691.5
-47.62622,-122.315979,Capitol Hill,WA,Seattle-Tacoma-Bellevue,King County,173,1895
-47.724628,-122.287479,Cedar Park,WA,Seattle-Tacoma-Bellevue,King County,544,1562
-47.615618,-122.337897,Denny Triangle,WA,Seattle-Tacoma-Bellevue,King County,631,2935
-47.607346,-122.335089,Downtown,WA,Seattle-Tacoma-Bellevue,King County,487,2298
-47.643806,-122.326777,Eastlake,WA,Seattle-Tacoma-Bellevue,King County,627,1923
-47.558159,-122.378924,Fairmount Park,WA,Seattle-Tacoma-Bellevue,King County,547,1470
-47.60819,-122.323829,First Hill,WA,Seattle-Tacoma-Bellevue,King County,367,2100
-47.656187,-122.352184,Fremont,WA,Seattle-Tacoma-Bellevue,King County,353,1803
-47.564809,-122.38585,Genesee,WA,Seattle-Tacoma-Bellevue,King County,504,1851.5
-47.679959,-122.333709,Green Lake,WA,Seattle-Tacoma-Bellevue,King County,436,1742
-47.694211,-122.355289,Greenwood,WA,Seattle-Tacoma-Bellevue,King County,288,1362.5
-47.628861,-122.354041,Lower Queen Anne,WA,Seattle-Tacoma-Bellevue,King County,536,1583.5
-47.649291,-122.36301,North Queen Anne,WA,Seattle-Tacoma-Bellevue,King County,405,1575
-47.680657,-122.313832,Roosevelt,WA,Seattle-Tacoma-Bellevue,King County,579,1831.5
-47.62908,-122.33685,South Lake Union,WA,Seattle-Tacoma-Bellevue,King County,481,2640
-47.66073,-122.305045,University District,WA,Seattle-Tacoma-Bellevue,King County,209,1512
-47.622282,-122.354226,Uptown,WA,Seattle-Tacoma-Bellevue,King County,545,2110
-47.658763,-122.334464,Wallingford,WA,Seattle-Tacoma-Bellevue,King County,290,1973
-47.636611,-122.342938,Westlake,WA,Seattle-Tacoma-Bellevue,King County,606,2110
-47.5535,-122.3804,Fairmount Park,WA,Seattle-Tacoma-Bellevue,King County,547,1470
-47.627316,-122.366882,Roosevelt,WA,Seattle-Tacoma-Bellevue,King County,579,1831.5
-47.605,-122.3344,Downtown,WA,Seattle-Tacoma-Bellevue,King County,585,1980
-47.6322,-122.3416,Westlake,WA,Seattle-Tacoma-Bellevue,King County,606,1977
-47.6418,-122.3265,Eastlake,WA,Seattle-Tacoma-Bellevue,King County,627,1923
-47.60621,-122.33207,Denny Triangle,WA,Seattle-Tacoma-Bellevue,King County,631,2935
+id,latitude,Longitude ,City,State,Metro,CountyName,SizeRank,2019-01
+1,47.6805,-122.12094,Redmond,WA,Seattle-Tacoma-Bellevue,King County,64,1931
+2,47.84472,-122.19849,Bothell,WA,Seattle-Tacoma-Bellevue,Snohomish County,115,1557
+3,47.67029,-122.34831,Seattle,WA,Seattle-Tacoma-Bellevue,King County,135,1700
+4,47.68361,-122.27802,Seattle,WA,Seattle-Tacoma-Bellevue,King County,209,1747
+5,47.73957,-122.34495,Shoreline,WA,Seattle-Tacoma-Bellevue,King County,242,1425
+6,47.6087583,-122.2964235,Seattle,WA,Seattle-Tacoma-Bellevue,King County,248,2040
+7,47.8962246,-122.1853637,Seattle Hill-Silver Firs,WA,Seattle-Tacoma-Bellevue,Snohomish County,289,1238
+8,47.7148126,-122.2031264,Kirkland,WA,Seattle-Tacoma-Bellevue,King County,311,1507
+9,48.7562157,-122.4894588,Bellingham,WA,Bellingham,Whatcom County,336,995
+10,47.6288591,-122.3456919,Seattle,WA,Seattle-Tacoma-Bellevue,King County,339,2500
+11,45.6405414,-122.6204002,Vancouver,WA,Portland-Vancouver-Hillsboro,Clark County,392,1095
+12,47.7170204,-122.3009337,Seattle,WA,Seattle-Tacoma-Bellevue,King County,408,1450
+13,47.6264794,-122.2051488,Bellevue,WA,Seattle-Tacoma-Bellevue,King County,485,2289
+14,47.6614244,-122.2683743,Seattle,WA,Seattle-Tacoma-Bellevue,King County,498,1547.5
+15,47.5412021,-122.2675626,Seattle,WA,Seattle-Tacoma-Bellevue,King County,504,1767
+16,47.9088246,-122.268112,Paine Field-Lake Stickney,WA,Seattle-Tacoma-Bellevue,Snohomish County,520,1225
+17,47.6338217,-122.3215448,Seattle,WA,Seattle-Tacoma-Bellevue,King County,620,1795
+18,47.85839,-122.2709006,Lynnwood,WA,Seattle-Tacoma-Bellevue,Snohomish County,741,1463.5
+19,47.6683603,-122.3769582,Seattle,WA,Seattle-Tacoma-Bellevue,King County,749,1944
+20,47.5105794,-122.1909906,Renton,WA,Seattle-Tacoma-Bellevue,King County,759,1560
+21,47.6913332,-122.382432,Seattle,WA,Seattle-Tacoma-Bellevue,King County,779,1395
+22,47.4116866,-122.245159,Kent,WA,Seattle-Tacoma-Bellevue,King County,789,1325
+23,47.6152474,-122.3497446,Seattle,WA,Seattle-Tacoma-Bellevue,King County,838,2514
+24,47.5745802,-122.4047843,Seattle,WA,Seattle-Tacoma-Bellevue,King County,849,1785
+25,47.9990269,-122.1914014,Everett,WA,Seattle-Tacoma-Bellevue,Snohomish County,884,1272.5
+26,47.1616994,-122.5019796,Lakewood,WA,Seattle-Tacoma-Bellevue,Pierce County,922,1129
+27,47.4925009,-121.9516339,Issaquah,WA,Seattle-Tacoma-Bellevue,King County,937,1823
+28,47.6384586,-122.3674079,Seattle,WA,Seattle-Tacoma-Bellevue,King County,942,1922
+29,47.6105427,-122.142426,Bellevue,WA,Seattle-Tacoma-Bellevue,King County,1013,1727
+30,47.759038,-122.202107,Bothell,WA,Seattle-Tacoma-Bellevue,Snohomish County,1082,1578.5
+31,47.6084921,-122.336407,Seattle,WA,Seattle-Tacoma-Bellevue,King County,1089,2399.5
+32,47.2457073,-122.4773432,Tacoma,WA,Seattle-Tacoma-Bellevue,Pierce County,1101,1195
+33,47.6329523,-122.2891887,Seattle,WA,Seattle-Tacoma-Bellevue,King County,1102,1695
+34,47.8419525,-122.2881807,Lynnwood,WA,Seattle-Tacoma-Bellevue,Snohomish County,1105,1345
+35,47.5824227,-122.2331227,Mercer Island,WA,Seattle-Tacoma-Bellevue,King County,1108,1823
+36,47.5762049,-122.3736284,Seattle,WA,Seattle-Tacoma-Bellevue,King County,1142,1515
+37,47.65805,-122.7120272,Silverdale,WA,Bremerton-Silverdale,Kitsap County,1154,1495
+38,47.4623372,-122.2055058,Renton,WA,Seattle-Tacoma-Bellevue,King County,1190,1350
+39,47.6015566,-122.3323351,Seattle,WA,Seattle-Tacoma-Bellevue,King County,1253,2100
+40,47.6150436,-122.1717577,Bellevue,WA,Seattle-Tacoma-Bellevue,King County,1271,1673
+41,47.668328,-122.387233,Ballard,WA,Seattle-Tacoma-Bellevue,King County,429,1980
+42,47.614592,-122.348464,Belltown,WA,Seattle-Tacoma-Bellevue,King County,412,2197.5
+43,47.538786,-122.275961,Brighton,WA,Seattle-Tacoma-Bellevue,King County,468,1691.5
+44,47.62622,-122.315979,Capitol Hill,WA,Seattle-Tacoma-Bellevue,King County,173,1895
+45,47.724628,-122.287479,Cedar Park,WA,Seattle-Tacoma-Bellevue,King County,544,1562
+46,47.615618,-122.337897,Denny Triangle,WA,Seattle-Tacoma-Bellevue,King County,631,2935
+47,47.607346,-122.335089,Downtown,WA,Seattle-Tacoma-Bellevue,King County,487,2298
+48,47.643806,-122.326777,Eastlake,WA,Seattle-Tacoma-Bellevue,King County,627,1923
+49,47.558159,-122.378924,Fairmount Park,WA,Seattle-Tacoma-Bellevue,King County,547,1470
+50,47.60819,-122.323829,First Hill,WA,Seattle-Tacoma-Bellevue,King County,367,2100
+51,47.656187,-122.352184,Fremont,WA,Seattle-Tacoma-Bellevue,King County,353,1803
+52,47.564809,-122.38585,Genesee,WA,Seattle-Tacoma-Bellevue,King County,504,1851.5
+53,47.679959,-122.333709,Green Lake,WA,Seattle-Tacoma-Bellevue,King County,436,1742
+54,47.694211,-122.355289,Greenwood,WA,Seattle-Tacoma-Bellevue,King County,288,1362.5
+55,47.628861,-122.354041,Lower Queen Anne,WA,Seattle-Tacoma-Bellevue,King County,536,1583.5
+56,47.649291,-122.36301,North Queen Anne,WA,Seattle-Tacoma-Bellevue,King County,405,1575
+57,47.680657,-122.313832,Roosevelt,WA,Seattle-Tacoma-Bellevue,King County,579,1831.5
+58,47.62908,-122.33685,South Lake Union,WA,Seattle-Tacoma-Bellevue,King County,481,2640
+59,47.66073,-122.305045,University District,WA,Seattle-Tacoma-Bellevue,King County,209,1512
+60,47.622282,-122.354226,Uptown,WA,Seattle-Tacoma-Bellevue,King County,545,2110
+61,47.658763,-122.334464,Wallingford,WA,Seattle-Tacoma-Bellevue,King County,290,1973
+62,47.636611,-122.342938,Westlake,WA,Seattle-Tacoma-Bellevue,King County,606,2110
+63,47.5535,-122.3804,Fairmount Park,WA,Seattle-Tacoma-Bellevue,King County,547,1470
+64,47.627316,-122.366882,Roosevelt,WA,Seattle-Tacoma-Bellevue,King County,579,1831.5
+65,47.605,-122.3344,Downtown,WA,Seattle-Tacoma-Bellevue,King County,585,1980
+66,47.6322,-122.3416,Westlake,WA,Seattle-Tacoma-Bellevue,King County,606,1977
+67,47.6418,-122.3265,Eastlake,WA,Seattle-Tacoma-Bellevue,King County,627,1923
+68,47.60621,-122.33207,Denny Triangle,WA,Seattle-Tacoma-Bellevue,King County,631,2935

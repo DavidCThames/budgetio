@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def search(request):
-    if request.method=='GET':
+    if request.method=='GET' and request.GET.get('search-housing') is not None:
         data = request.GET
         budget = {
             "housing": int(data['search-housing']),

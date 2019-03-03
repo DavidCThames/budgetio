@@ -72,7 +72,7 @@ for i in range(len(latitudes)):
         tmp['latitude'] = rest['location']['latitude']
         tmp['longitude'] = rest['location']['longitude']
         tmp['price_range'] = rest['price_range']
-        tmp['user _rating'] = rest['user_rating']['aggregate_rating']
+        tmp['user_rating'] = rest['user_rating']['aggregate_rating']
         tmp['photos_url'] = rest['photos_url']
         tmp['cuisines'] = rest['cuisines']
         tmp['has_online_delivery'] = rest['has_online_delivery']

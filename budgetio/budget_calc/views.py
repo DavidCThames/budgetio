@@ -37,7 +37,7 @@ def search(request):
         }
         budget['savings'] = new_data.salary - (new_data.food + new_data.housing + new_data.transportation + new_data.healthcare + new_data.taxes + new_data.other)
 
-        budget = shift_for_pref(budget, pref_data)
+        budget = shift_for_pref(budget.copy(), pref_data.copy())
 
         # Make data per month
         for key in budget:
@@ -45,7 +45,7 @@ def search(request):
 
         neighborhoods = display_neighborhoods(budget['housing'])
         
-        return render(request, 'budget_calc/results.html',  {'budget': budget, 'neighborhoods': neighborhoods})
+        return render(request, 'budget_calc/results.html',  {'budget': budget, 'old_budget':pref_data, 'neighborhoods': neighborhoods})
 
     return render(request, 'budget_calc/search.html')
 

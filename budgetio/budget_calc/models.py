@@ -14,7 +14,7 @@ class Neighborhoods(models.Model):
     name = models.CharField(max_length=50)
     latitude = models.CharField(max_length=50)
     longtitude = models.CharField(max_length=50)
-    restaurants = model.ForeignKey(Restaurants, on_delete=models.CASCADE)
+    restaurants = model.ForeignKey(Restaurants, related_name='Restaurants', on_delete=models.CASCADE)
 
 class Restaurants(models.Model):
     name = models.CharField(max_length=50)

@@ -38,7 +38,10 @@ def search(request):
         budget['savings'] = new_data.salary - (new_data.food + new_data.housing + new_data.transportation + new_data.healthcare + new_data.taxes + new_data.other)
 
         budget = shift_for_pref(budget, pref_data)
-    
+
+        # Make data per month
+        for key in budget:
+            budget[key] = budget[key] / 12    
 
         return render(request, 'budget_calc/results.html',  {'budget': budget})
 
@@ -49,7 +52,7 @@ def shift_for_pref(data_avg, data_pref):
     # Get the total salary of each dataset
     data_avg_total = sum(data_avg.values(), 0.0)
     data_pref_total = sum(data_pref.values(), 0.0)
-
+    
     # Convert data_pref to the same total as data_avg
     for key in data_pref:
         data_pref[key] = int(data_pref[key] * data_avg_total / data_pref_total)
@@ -58,4 +61,5 @@ def shift_for_pref(data_avg, data_pref):
 
     for key in data_sum:
         data_sum[key] = int(data_sum[key] / 2)
+
     return data_sum

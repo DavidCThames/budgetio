@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class ExpencesLookupTable(models.Model):
+class Expenceses(models.Model):
     salary = models.IntegerField()
     food = models.IntegerField()
     housing = models.IntegerField()

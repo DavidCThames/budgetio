@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+    <div class="row">
+        <div class="col s2"></div>
+
+        <div class="col s8">
+
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Search</span>
+                    <form method="GET">
+			{% csrf_token %}
+
+                        <h5> New Location </h5>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input name="search-new-city" placeholder="New York" type="text" id="search-new-city" class="validate">
+                                <label for="search-old-city">City</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input name="search-new-state" placeholder="New York" type="text" id="search-new-state" class="validate">
+                                <label for="search-new-state">State</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input name="search-new-salary" placeholder="50000" type="text" id="search-new-salary" class="validate">
+                                <label for="search-new-salary">Salary ($)</label>
+                            </div>
+                            <div class="col s1"></div>
+                        </div>
+                        <h5> Old Location </h5>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input name="search-old-city" placeholder="Seattle" type="text" id="search-old-city" class="validate">
+                                <label for="search-old-city">City</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input name="search-old-state" placeholder="Washington" type="text" id="search-old-state" class="validate">
+                                <label for="search-old-state">State</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input name="search-old-salary" placeholder="80000" type="text" id="search-old-salary" class="validate">
+                                <label for="search-old-salary">Salary ($)</label>
+                            </div>
+                            <div class="col s1"></div>
+                        </div>
+                        <h6>Old Budget (per month)</h6>
+                        <p>Enter your per month expences from each catagory. Leave out any money saved.</p> 
+                        <div class="row">
+                            <div class="input-field col s3">
+                                <input name="search-housing" placeholder="2000" type="text" id="search-housing" class="validate">
+                                <label for="search-housing">Housing</label>
+                            </div>
+                            <div class="input-field col s3">
+                                <input name="search-utilities" placeholder="500" type="text" id="search-utilities" class="validate">
+                                <label for="search-utilities">Utilities</label>
+                            </div>
+                            <div class="input-field col s3">
+                                <input name="search-food" placeholder="500" type="text" id="search-food" class="validate">
+                                <label for="search-food">Food</label>
+                            </div>
+                            <div class="input-field col s3">
+                                <input name="search-other" placeholder="500" type="text" id="search-other" class="validate">
+                                <label for="search-other">Other</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <button class="btn waves-effect waves-light deep-purple" type="submit" name="search-action">Search
+                                    <i class="material-icons right">search</i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div> 
+        <div class="col s2"></div>
+    </div>
+{% endblock %}
